@@ -1,0 +1,84 @@
+<?php
+
+// Comments
+// Ini adalah contoh komentar satu baris
+
+/*
+Ini adalah contoh komentar
+beberapa baris
+*/
+
+// Variables
+$name = "THORIQ";
+$age = 20;
+
+// Echo / Print
+echo "Hello, $name!"; // Output: Hello, Thoriq!
+
+// Data Types
+$integerVar = 10;
+$floatVar = 3.14;
+$stringVar = "Hello";
+$booleanVar = true;
+
+// Strings
+$greeting = "Welcome";
+$concatenation = $greeting . " " . $name; // Concatenation
+
+// Numbers
+$sum = $integerVar + $floatVar;
+
+// Math
+$multiplied = $integerVar * 2;
+
+// Constants
+define("PI", 3.14159);
+
+// Magic Constants
+echo _LINE_; // Output: Current line number
+
+// Operators
+$result = $integerVar + $floatVar; // Addition
+
+// If...Else...Elseif
+if ($age < 18) {
+    echo "Underage";
+} elseif ($age >= 18 && $age < 60) {
+    echo "Adult";
+} else {
+    echo "Senior";
+}
+
+// Switch
+$day = "Monday";
+switch ($day) {
+    case "Monday":
+        echo "It's Monday!";
+        break;
+    case "Tuesday":
+        echo "It's Tuesday!";
+        break;
+    default:
+        echo "It's another day.";
+}
+
+// Loops
+for ($i = 1; $i <= 5; $i++) {
+    echo $i; // Output: 12345
+}
+
+// Functions
+function sayHello($name) {
+    echo "Hello, $name!";
+}
+
+sayHello("Thoriq"); // Output: Hello, Thoriq!
+
+// Arrays
+$colors = array("Red", "Green", "Blue");
+
+// Superglobals
+echo $_SERVER['PHP_SELF']; // Current script filename
+
+?>
+
